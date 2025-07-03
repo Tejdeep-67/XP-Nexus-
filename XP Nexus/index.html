@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XP Nexus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #121212;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      color: #00ffd0;
+      font-size: 2rem;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero h2 {
+      position: relative;
+      z-index: 2;
+      font-size: 2rem;
+      text-align: center;
+      color: #ffffff;
+      padding: 0 1rem;
+    }
+
+    .games-section {
+      padding: 6rem 2rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      background-color: #111;
+    }
+
+    .game-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 255, 208, 0.2);
+    }
+
+    .game-logo {
+      width: 60px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .game-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #00ffd0;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    footer {
+      background: #121212;
+      padding: 2rem;
+      text-align: center;
+      color: #777;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>XP Nexus</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Explore iconic games in one place.</h2>
+  </section>
+
+  <section class="games-section">
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" class="game-logo" alt="GTA V Logo" />
+      <a href="gta-v.html" class="game-title">Grand Theft Auto V</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" class="game-logo" alt="RDR2 Logo" />
+      <a href="rdr2.html" class="game-title">Red Dead Redemption 2</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg" class="game-logo" alt="God of War Logo" />
+      <a href="god-of-war.html" class="game-title">God of War</a>
+    </div>
+    <div class="game-card">
+      <img src="/logos/ghost-of-tsushima.png" alt="Ghost of Tsushima Logo" class="logo">
+      <a href="ghost-of-tsushima.html" class="game-title">Ghost of Tsushima</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" class="game-logo" alt="Cyberpunk Logo" />
+      <a href="cyberpunk.html" class="game-title">Cyberpunk 2077</a>
+    </div>
+    <div class="game-card">
+      <img src="logos/minecraft.png" alt="Minecraft Logo" class="game-logo">
+      <a href="minecraft.html" class="game-title">Minecraft</a>
+    </div>
+    <div class="game-card">
+      <img src="/logos/forza-horizon-5.png" alt="Forza Horizon 5 Logo" class="logo">
+      <a href="forza-horizon-5.html" class="game-title">Forza Horizon 5</a>
+    </div>
+    <div class="game-card">
+      <img src="/logos/resident-evil-4.png" alt="Resident Evil 4 Logo" class="logo">
+      <a href="resident-evil-4.html" class="game-title">Resident Evil 4</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" class="game-logo" alt="Witcher 3 Logo" />
+      <a href="witcher-3.html" class="game-title">The Witcher 3</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg" class="game-logo" alt="Elden Ring Logo" />
+      <a href="elden-ring.html" class="game-title">Elden Ring</a>
+    </div>
+  </section>
+
+  <footer>
+    All logos & titles belong to their respective owners.
+  </footer>
+</body>
+</html>
